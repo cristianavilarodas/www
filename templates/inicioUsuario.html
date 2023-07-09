@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for ('static',filename='css/styles2.css' )}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <title>Pagina de musica</title>
+   
+</head>
+<body>
+  
+  <!--_____________________________________________ Navbar _____________________________________________-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/strange-music-logo-logo-svg-vector.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        <cite title="Source Title">MUSICALY</cite>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="/usuarioPaginaInicio" class="nav-link"><i class="fas fa-music"></i> Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="/paginaCanciones" class="nav-link"><i class="fas fa-list"></i> Canciones</a>
+            
+          </li>
+          <li class="nav-item">
+            <h6>
+                <a href="/perfilPagina" class="nav-link"><i class="fas fa-user"></i> Mi Perfil</a>
+            </h6>
+          </li>
+
+             <!-- 
+          <li class="nav-item">
+            <a href="#c" class="nav-link"><i class="fas fa-user-plus"></i> Inscribirse</a>
+          </li>
+           -->
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--_____________________________________________ Cierra Navbar _____________________________________________-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--_____________________________________________  Showcase _____________________________________________-->
+
+
+
+<section
+      class=" text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start bg-dark"
+      
+    >
+    
+    <!-- quite todo el style y pong en class bg-dark-->
+     <!-- style="background-color: #000;"-->
+    
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>
+               ¡Bienvenido  <span class="text-success"> melómano!</span></h1>
+            <p class="lead my-4">
+               Sumérgete en el maravilloso mundo de la música con nosotros. En <span class="text-success"> Musicaly</span>, estamos aquí para deleitarte con los acordes, las melodías y las letras que alimentan tu pasión por la música.
+            </p>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Descubrelo!
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src=" {{ url_for ('static',filename='img/undraw_compose_music_re_wpiw.svg' )}}"
+           alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+
+
+<!--_____________________________________________ Cierra  Showcase_____________________________________________-->
+
+
+
+  
+    
+
+ 
+
+
+
+
+
+
+
+    
+
+ 
+
+
+
+
+
+
+
+ <!-- Boxes -->
+ <section class="bg-primary p-5">
+   <div class="container">
+     <div class="row text-center g-4">
+       <div class="col-md">
+         <div class="card bg-dark text-light">
+           <div class="card-body text-center bg-dark" 
+           
+           >
+             <div class="h1 mb-3">
+               <i class="bi bi-laptop"></i>
+             </div>
+             <h3 class="card-title mb-3">Clásicos remasterizados</h3>
+             <p class="card-text">
+               Sumérgete en el mundo de la nostalgia con esta sección dedicada a los clásicos atemporales de la música. Aquí encontrarás versiones remasterizadas y remezcladas de tus canciones favoritas, brindándote una experiencia renovada de los éxitos de antaño.
+             </p>
+             <a href="#" class="btn btn-primary">Read More</a>
+           </div>
+         </div>
+       </div>
+       <div class="col-md">
+         <div class="card bg-secondary text-light">
+           <div class="card-body text-center">
+             <div class="h1 mb-3">
+               <i class="bi bi-person-square"></i>
+             </div>
+             <h3 class="card-title mb-3">Descubre lo último</h3>
+             <p class="card-text">
+               Mantente al día con las tendencias más candentes de la industria musical. Desde los artistas emergentes hasta los lanzamientos más esperados, esta sección te mantendrá actualizado y te presentará nuevos sonidos que no puedes perderte.
+             </p>
+             <a href="#" class="btn btn-dark">Read More</a>
+           </div>
+         </div>
+       </div>
+       <div class="col-md">
+         <div class="card bg-dark text-light">
+           <div class="card-body text-center bg-dark"
+           
+           >
+             <div class="h1 mb-3">
+               <i class="bi bi-people"></i>
+             </div>
+             <h3 class="card-title mb-3">Explora nuevos géneros</h3>
+             <p class="card-text">
+               Amplía tus horizontes musicales con esta sección dedicada a géneros menos conocidos y exploraciones sonoras únicas. Desde fusiones vanguardistas hasta ritmos étnicos, aquí encontrarás una variedad de música.
+             </p>
+             <a href="#" class="btn btn-primary">Read More</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+
+    
+
+
+
+
+
+ <section id="learn" class="p-5  text-light bg-dark"
+ >
+   <div class="container">
+     <div class="row align-items-center justify-content-between">
+       <div class="col-md p-5">
+         <h2>¿Por qué  <span class="text-warning"> Musicaly</span> es tu mejor elección musical?</h2>
+
+         <p class="lead">
+            <br>
+            Explora nuestra amplia selección de géneros musicales y descubre artistas emergentes y consagrados que te harán vibrar. Desde el rock clásico hasta el hip-hop contemporáneo, desde las baladas románticas hasta los ritmos más bailables, tenemos algo para todos los gustos.
+         </p>
+         <p class="lead">
+           
+Suma tus canciones favoritas a tus listas de reproducción personalizadas y disfruta de la música en cualquier momento y lugar. Además, te ofrecemos recomendaciones basadas en tus preferencias, para que siempre descubras nuevos tesoros musicales que te sorprenderán.
+
+         </p>
+         <p class="lead">
+          
+Únete a nuestra vibrante comunidad musical, donde podrás compartir tus canciones favoritas, intercambiar opiniones con otros amantes de la música y estar al tanto de los últimos lanzamientos. Musicaly es el lugar perfecto para conectarte con personas que comparten tu pasión y expandir tus horizontes musicales.
+          </p>
+         <a href="#" class="btn btn-light mt-3">
+           <i class="bi bi-chevron-right"></i> Read More
+         </a>
+       </div>
+       <div class="col-md">
+         <img src=    " {{ url_for ('static',filename='img/undraw_creative_woman_re_u5tk.svg' )}}" class="img-fluid" alt="" />
+     
+       </div>
+     </div>
+   </div>
+ </section>
+
+
+
+
+ <!-- Acordeón de preguntas -->
+<section id="questions" class="p-5 bg-secondary">
+  <div class="container">
+    <h2 class="text-center mb-4">Preguntas frecuentes</h2>
+    <div class="accordion accordion-flush" id="questions">
+      <!-- Pregunta 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+            ¿Dónde se encuentran exactamente?
+          </button>
+        </h2>
+        <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+          <div class="accordion-body bg-primary text-light">
+            Nos encontramos en el corazón de la ciudad, en el centro cultural XYZ. Estamos ubicados en la Calle Principal, número 123.
+          </div>
+        </div>
+      </div>
+      <!-- Pregunta 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+            ¿Cuánto cuesta asistir?
+          </button>
+        </h2>
+        <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+          <div class="accordion-body bg-primary text-light">
+            El costo de asistir a nuestros eventos y clases varía dependiendo de la duración y el tipo de actividad. Te recomendamos revisar nuestra página web oficial para obtener información detallada sobre los precios y las opciones de pago.
+          </div>
+        </div>
+      </div>
+      <!-- Pregunta 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+            ¿Qué necesito saber?
+          </button>
+        </h2>
+        <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+          <div class="accordion-body bg-primary text-light">
+            Antes de asistir a nuestros eventos, es importante que sepas que no se permite la entrada de alimentos y bebidas externos. También te recomendamos llevar ropa cómoda y estar preparado/a para disfrutar de una experiencia musical inolvidable.
+          </div>
+        </div>
+      </div>
+      <!-- Pregunta 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+            ¿Cómo me puedo inscribir?
+          </button>
+        </h2>
+        <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+          <div class="accordion-body bg-primary text-light">
+            El proceso de inscripción es muy sencillo. Solo tienes que completar nuestro formulario en línea en nuestra página web oficial y seguir las instrucciones para realizar el pago. Una vez que hayas completado el proceso, recibirás un correo electrónico de confirmación con todos los detalles.
+          </div>
+        </div>
+      </div>
+      <!-- Pregunta 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+            ¿Me ayudan a encontrar trabajo?
+          </button>
+        </h2>
+        <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+          <div class="accordion-body bg-primary text-light">
+            Sí, ofrecemos servicios de orientación laboral a nuestros estudiantes y participantes. Trabajamos en colaboración con empresas y profesionales del sector musical para brindar oportunidades de empleo y prácticas. Además, ofrecemos talleres y charlas para ayudarte a desarrollar habilidades profesionales y aumentar tus posibilidades de éxito en la industria musical.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--_____________________________________________ Newsletter _____________________________________________-->
+
+
+<section class=" text-light p-5 bg-dark"
+>
+   <div class="container">
+     <div class="d-md-flex justify-content-between align-items-center">
+       <h3 class="mb-3 mb-md-0">Regístrate para recibir nuestro boletín informativo</h3>
+
+       <div class="input-group news-input">
+         <input type="text" class="form-control" placeholder="Enter Email" />
+         <button class="btn btn-secondary btn-lg" type="button">Submit</button>
+       </div>
+     </div>
+   </div>
+ </section>
+
+<!--_____________________________________________ cierra  Newsletter _____________________________________________--> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+</body>
+
+</html>
